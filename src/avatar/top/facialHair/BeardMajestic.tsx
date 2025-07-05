@@ -35,3 +35,7 @@ export default class BeardMajestic extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+BeardMajestic.optionValue = 'BeardMajestic'

@@ -55,3 +55,7 @@ export default class LongHairMiaWallace extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+LongHairMiaWallace.optionValue = 'LongHairMiaWallace'

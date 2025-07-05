@@ -35,3 +35,7 @@ export default class Eyepatch extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+Eyepatch.optionValue = 'Eyepatch'

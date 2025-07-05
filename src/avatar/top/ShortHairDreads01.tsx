@@ -56,3 +56,7 @@ export default class ShortHairDreads01 extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+ShortHairDreads01.optionValue = 'ShortHairDreads01'

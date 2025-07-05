@@ -360,3 +360,7 @@ export default class LongHairFrida extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+LongHairFrida.optionValue = 'LongHairFrida'

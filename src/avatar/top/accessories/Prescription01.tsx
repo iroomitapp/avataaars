@@ -70,3 +70,7 @@ export default class Prescription01 extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+Prescription01.optionValue = 'Prescription01'

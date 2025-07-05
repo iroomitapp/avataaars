@@ -9,7 +9,7 @@ export default class Squint extends React.Component {
   private mask1 = uniqueId('react-mask-')
   private mask2 = uniqueId('react-mask-')
 
-  render () {
+  render() {
     const { path1, path2, mask1, mask2 } = this
     return (
       <g id='Eyes/Squint-😊' transform='translate(0.000000, 8.000000)'>

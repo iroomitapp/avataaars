@@ -57,3 +57,7 @@ export default class Concerned extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+Concerned.optionValue = 'Concerned'

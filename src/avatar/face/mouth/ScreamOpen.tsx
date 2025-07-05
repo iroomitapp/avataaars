@@ -57,3 +57,7 @@ export default class ScreamOpen extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+ScreamOpen.optionValue = 'ScreamOpen'

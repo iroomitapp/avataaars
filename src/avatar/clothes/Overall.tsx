@@ -49,3 +49,7 @@ export default class Overall extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+Overall.optionValue = 'Overall'

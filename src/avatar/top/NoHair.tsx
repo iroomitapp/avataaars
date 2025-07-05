@@ -55,3 +55,7 @@ export default class NoHair extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+NoHair.optionValue = 'NoHair'

@@ -48,3 +48,7 @@ export default class Hoodie extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+Hoodie.optionValue = 'Hoodie'

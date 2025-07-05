@@ -52,3 +52,7 @@ export default class Round extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+Round.optionValue = 'Round'

@@ -47,3 +47,7 @@ export default class LongHairBob extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+LongHairBob.optionValue = 'LongHairBob'

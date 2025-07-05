@@ -45,3 +45,7 @@ export default class Grimace extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+Grimace.optionValue = 'Grimace'

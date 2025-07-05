@@ -84,3 +84,7 @@ export default class LongHairShavedSides extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+LongHairShavedSides.optionValue = 'LongHairShavedSides'

@@ -102,3 +102,7 @@ export default class Turban extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+Turban.optionValue = 'Turban'

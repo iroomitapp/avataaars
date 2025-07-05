@@ -72,3 +72,7 @@ export default class BlazerShirt extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+BlazerShirt.optionValue = 'BlazerShirt'

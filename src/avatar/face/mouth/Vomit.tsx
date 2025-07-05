@@ -88,3 +88,7 @@ export default class Vomit extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+Vomit.optionValue = 'Vomit'
