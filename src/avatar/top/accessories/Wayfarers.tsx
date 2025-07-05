@@ -120,3 +120,7 @@ export default class Wayfarers extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+Wayfarers.optionValue = 'Wayfarers'

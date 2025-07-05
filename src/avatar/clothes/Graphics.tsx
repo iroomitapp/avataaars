@@ -395,3 +395,7 @@ export default class Graphics extends React.Component<Props> {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+Graphics.optionValue = 'Skull'

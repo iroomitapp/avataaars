@@ -56,3 +56,7 @@ export default class LongHairNotTooLong extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+LongHairNotTooLong.optionValue = 'LongHairNotTooLong'

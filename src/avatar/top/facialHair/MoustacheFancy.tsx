@@ -35,3 +35,7 @@ export default class MoustacheFancy extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+MoustacheFancy.optionValue = 'MoustacheFancy'

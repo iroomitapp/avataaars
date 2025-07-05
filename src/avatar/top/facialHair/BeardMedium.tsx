@@ -35,3 +35,7 @@ export default class BeardMedium extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+BeardMedium.optionValue = 'BeardMedium'

@@ -35,3 +35,7 @@ export default class BeardLight extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+BeardLight.optionValue = 'BeardLight'

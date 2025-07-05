@@ -73,3 +73,7 @@ export default class ShortHairShortWaved extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+ShortHairShortWaved.optionValue = 'ShortHairShortWaved'

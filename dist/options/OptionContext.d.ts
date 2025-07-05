@@ -1,3 +1,4 @@
+import * as React from 'react';
 import Option from './Option';
 export interface OptionState {
     key: string;
@@ -5,10 +6,11 @@ export interface OptionState {
     defaultValue?: string;
     available: number;
 }
-export declare type OptionContextState = {
+export type OptionContextState = {
     [index: string]: OptionState;
 };
-export default class OptionContext {
+export declare const OptionContext: React.Context<OptionContextClass | null>;
+export declare class OptionContextClass {
     private stateChangeListeners;
     private valueChangeListeners;
     private _state;
@@ -34,3 +36,4 @@ export default class OptionContext {
     private setState;
     private notifyListener;
 }
+export default OptionContextClass;

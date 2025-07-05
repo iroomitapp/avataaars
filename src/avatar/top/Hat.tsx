@@ -94,3 +94,7 @@ export default class Hat extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+Hat.optionValue = 'Hat'

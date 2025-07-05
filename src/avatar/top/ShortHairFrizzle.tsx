@@ -73,3 +73,7 @@ export default class ShortHairFrizzle extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+ShortHairFrizzle.optionValue = 'ShortHairFrizzle'

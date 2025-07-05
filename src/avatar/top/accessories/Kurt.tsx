@@ -68,3 +68,7 @@ export default class Kurt extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+Kurt.optionValue = 'Kurt'

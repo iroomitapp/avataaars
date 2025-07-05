@@ -41,3 +41,7 @@ export default class CollarSweater extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+CollarSweater.optionValue = 'CollarSweater'

@@ -11,8 +11,12 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var OptionContext = /** @class */ (function () {
-    function OptionContext(options) {
+exports.OptionContextClass = exports.OptionContext = void 0;
+var React = require("react");
+// Create modern React context
+exports.OptionContext = React.createContext(null);
+var OptionContextClass = /** @class */ (function () {
+    function OptionContextClass(options) {
         this.stateChangeListeners = new Set();
         this.valueChangeListeners = new Set();
         this._state = {};
@@ -27,33 +31,33 @@ var OptionContext = /** @class */ (function () {
             };
         }
     }
-    Object.defineProperty(OptionContext.prototype, "options", {
+    Object.defineProperty(OptionContextClass.prototype, "options", {
         get: function () {
             return this._options;
         },
         enumerable: false,
         configurable: true
     });
-    Object.defineProperty(OptionContext.prototype, "state", {
+    Object.defineProperty(OptionContextClass.prototype, "state", {
         get: function () {
             return this._state;
         },
         enumerable: false,
         configurable: true
     });
-    OptionContext.prototype.addStateChangeListener = function (listener) {
+    OptionContextClass.prototype.addStateChangeListener = function (listener) {
         this.stateChangeListeners.add(listener);
     };
-    OptionContext.prototype.removeStateChangeListener = function (listener) {
+    OptionContextClass.prototype.removeStateChangeListener = function (listener) {
         this.stateChangeListeners.delete(listener);
     };
-    OptionContext.prototype.addValueChangeListener = function (listener) {
+    OptionContextClass.prototype.addValueChangeListener = function (listener) {
         this.valueChangeListeners.add(listener);
     };
-    OptionContext.prototype.removeValueChangeListener = function (listener) {
+    OptionContextClass.prototype.removeValueChangeListener = function (listener) {
         this.valueChangeListeners.delete(listener);
     };
-    OptionContext.prototype.optionEnter = function (key) {
+    OptionContextClass.prototype.optionEnter = function (key) {
         var _a;
         // TODO:
         var optionState = this.getOptionState(key);
@@ -61,17 +65,17 @@ var OptionContext = /** @class */ (function () {
             _a[key] = __assign(__assign({}, optionState), { available: optionState.available + 1 }),
             _a));
     };
-    OptionContext.prototype.optionExit = function (key) {
+    OptionContextClass.prototype.optionExit = function (key) {
         var _a;
         var optionState = this.getOptionState(key);
         this.setState((_a = {},
             _a[key] = __assign(__assign({}, optionState), { available: optionState.available - 1 }),
             _a));
     };
-    OptionContext.prototype.getOptionState = function (key) {
+    OptionContextClass.prototype.getOptionState = function (key) {
         return this.state[key] || null;
     };
-    OptionContext.prototype.getValue = function (key) {
+    OptionContextClass.prototype.getValue = function (key) {
         var optionState = this.getOptionState(key);
         if (!optionState) {
             return null;
@@ -82,40 +86,42 @@ var OptionContext = /** @class */ (function () {
         }
         return optionState.defaultValue || null;
     };
-    OptionContext.prototype.setValue = function (key, value) {
+    OptionContextClass.prototype.setValue = function (key, value) {
         for (var _i = 0, _a = Array.from(this.valueChangeListeners); _i < _a.length; _i++) {
             var listener = _a[_i];
             listener(key, value);
         }
     };
     // set single source of truth
-    OptionContext.prototype.setData = function (data) {
+    OptionContextClass.prototype.setData = function (data) {
         this._data = data;
         this.notifyListener();
     };
-    OptionContext.prototype.setDefaultValue = function (key, defaultValue) {
+    OptionContextClass.prototype.setDefaultValue = function (key, defaultValue) {
         var _a;
         var optionState = this.getOptionState(key);
         this.setState((_a = {},
             _a[key] = __assign(__assign({}, optionState), { defaultValue: defaultValue }),
             _a));
     };
-    OptionContext.prototype.setOptions = function (key, options) {
+    OptionContextClass.prototype.setOptions = function (key, options) {
         var _a;
         this.setState((_a = {},
             _a[key] = __assign(__assign({}, this.state[key]), { key: key, options: options }),
             _a));
     };
-    OptionContext.prototype.setState = function (state) {
+    OptionContextClass.prototype.setState = function (state) {
         this._state = __assign(__assign({}, this.state), state);
         this.notifyListener();
     };
-    OptionContext.prototype.notifyListener = function () {
+    OptionContextClass.prototype.notifyListener = function () {
         for (var _i = 0, _a = Array.from(this.stateChangeListeners); _i < _a.length; _i++) {
             var listener = _a[_i];
             listener();
         }
     };
-    return OptionContext;
+    return OptionContextClass;
 }());
-exports.default = OptionContext;
+exports.OptionContextClass = OptionContextClass;
+// Export the class as default for backward compatibility
+exports.default = OptionContextClass;

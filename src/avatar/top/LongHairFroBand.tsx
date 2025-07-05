@@ -54,3 +54,7 @@ export default class LongHairFroBand extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+LongHairFroBand.optionValue = 'LongHairFroBand'

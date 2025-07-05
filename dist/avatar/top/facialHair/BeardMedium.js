@@ -22,8 +22,8 @@ var BeardMedium = /** @class */ (function (_super) {
     __extends(BeardMedium, _super);
     function BeardMedium() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.path1 = lodash_1.uniqueId('react-path-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
         return _this;
     }
     BeardMedium.prototype.render = function () {
@@ -40,3 +40,5 @@ var BeardMedium = /** @class */ (function (_super) {
     return BeardMedium;
 }(React.Component));
 exports.default = BeardMedium;
+// Keep the static property for compatibility
+BeardMedium.optionValue = 'BeardMedium';

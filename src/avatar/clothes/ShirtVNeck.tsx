@@ -32,3 +32,7 @@ export default class ShirtVNeck extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+ShirtVNeck.optionValue = 'ShirtVNeck'

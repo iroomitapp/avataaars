@@ -60,3 +60,7 @@ export default class ShortHairShaggyMullet extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+ShortHairShaggyMullet.optionValue = 'ShortHairShaggyMullet'

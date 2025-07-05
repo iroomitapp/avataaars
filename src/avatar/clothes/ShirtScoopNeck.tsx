@@ -34,3 +34,7 @@ export default class ShirtScoopNeck extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+ShirtScoopNeck.optionValue = 'ShirtScoopNeck'

@@ -12,7 +12,7 @@ export default class WinterHat2 extends React.Component {
   private path2 = uniqueId('react-path-')
   private path3 = uniqueId('react-path-')
 
-  render () {
+  render() {
     const { mask1, mask2, path1, path2, path3 } = this
     return (
       <g id='Top'>
@@ -33,27 +33,23 @@ export default class WinterHat2 extends React.Component {
         <g id='Mask' />
         <g
           id='Top/Accessories/Winter-Hat-2'
-          transform='translate(-1.000000, 0.000000)'
-        >
+          transform='translate(-1.000000, 0.000000)'>
           <g
             id='hat'
             strokeWidth='1'
             fillRule='evenodd'
-            transform='translate(61.000000, 0.000000)'
-          >
+            transform='translate(61.000000, 0.000000)'>
             <g
               id='string'
               transform='translate(0.000000, 176.000000)'
-              fill='#F4F4F4'
-            >
+              fill='#F4F4F4'>
               <circle id='puff' cx='9' cy='65' r='9' />
               <rect x='8' y='0' width='2' height='58' />
             </g>
             <g
               id='string'
               transform='translate(126.000000, 168.000000)'
-              fill='#F4F4F4'
-            >
+              fill='#F4F4F4'>
               <circle id='puff' cx='9' cy='65' r='9' />
               <rect x='8' y='0' width='2' height='58' />
             </g>
@@ -77,8 +73,7 @@ export default class WinterHat2 extends React.Component {
               id='light-triangles'
               transform='translate(29.000000, 32.000000)'
               fill='#FFFFFF'
-              fillOpacity='0.5'
-            >
+              fillOpacity='0.5'>
               <polygon
                 id='Triangle'
                 transform='translate(12.500000, 9.000000) rotate(180.000000) translate(-12.500000, -9.000000) '
@@ -99,8 +94,7 @@ export default class WinterHat2 extends React.Component {
               id='dark-triangles'
               transform='translate(13.000000, 41.000000)'
               fill='#000000'
-              fillOpacity='0.5'
-            >
+              fillOpacity='0.5'>
               <polygon id='Triangle' points='12.5 0 25 18 0 18' />
               <polygon id='Triangle' points='43.5 0 56 18 31 18' />
               <polygon id='Triangle' points='74.5 0 87 18 62 18' />
@@ -114,3 +108,6 @@ export default class WinterHat2 extends React.Component {
     )
   }
 }
+
+// Keep the static property for compatibility
+WinterHat2.optionValue = 'WinterHat2'

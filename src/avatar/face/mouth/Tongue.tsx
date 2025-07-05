@@ -48,3 +48,7 @@ export default class Tongue extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+Tongue.optionValue = 'Tongue'

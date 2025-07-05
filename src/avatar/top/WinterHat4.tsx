@@ -125,3 +125,7 @@ export default class WinterHat4 extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+WinterHat4.optionValue = 'WinterHat4'

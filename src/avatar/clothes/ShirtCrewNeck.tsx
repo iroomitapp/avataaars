@@ -51,3 +51,7 @@ export default class ShirtCrewNeck extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+ShirtCrewNeck.optionValue = 'ShirtCrewNeck'

@@ -90,3 +90,7 @@ export default class Hijab extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+Hijab.optionValue = 'Hijab'

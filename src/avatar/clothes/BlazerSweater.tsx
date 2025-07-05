@@ -72,3 +72,7 @@ export default class BlazerSweater extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+BlazerSweater.optionValue = 'BlazerSweater'

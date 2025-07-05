@@ -125,3 +125,7 @@ export default class Sunglasses extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+Sunglasses.optionValue = 'Sunglasses'

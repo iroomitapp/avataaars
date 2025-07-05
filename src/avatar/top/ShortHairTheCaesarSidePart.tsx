@@ -73,3 +73,7 @@ export default class ShortHairTheCaesarSidePart extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+ShortHairTheCaesarSidePart.optionValue = 'ShortHairTheCaesarSidePart'

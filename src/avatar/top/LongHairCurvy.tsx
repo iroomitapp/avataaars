@@ -69,3 +69,7 @@ export default class LongHairCurvy extends React.Component {
     )
   }
 }
+
+
+// Keep the static property for compatibility
+LongHairCurvy.optionValue = 'LongHairCurvy'
